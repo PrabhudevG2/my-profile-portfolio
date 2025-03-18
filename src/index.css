@@ -80,6 +80,9 @@
   
   body {
     @apply bg-resume-light text-resume-dark font-sans antialiased;
+    background: radial-gradient(circle at top right, rgba(255, 122, 89, 0.03), transparent 800px),
+                radial-gradient(circle at bottom left, rgba(103, 76, 175, 0.03), transparent 800px),
+                #F5F5F7;
   }
   
   h1, h2, h3, h4, h5, h6 {

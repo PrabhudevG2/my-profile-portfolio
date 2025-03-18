@@ -53,21 +53,20 @@ const Hero = () => {
   ];
   
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-10" style={{ "--section-index": "0" } as React.CSSProperties}>
-      <div className="container px-4 md:px-6">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-10 relative overflow-hidden" style={{ "--section-index": "0" } as React.CSSProperties}>
+      {/* Heart-shaped gradient background */}
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-orange-500 via-red-500 to-blue-500 opacity-20 blur-3xl"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-gradient-to-tl from-blue-500 via-purple-500 to-pink-500 opacity-20 blur-3xl"></div>
+      
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
           <div className="md:col-span-7 space-y-6">
             <div className="space-y-2">
               <h1 className="opacity-0 animate-fade-in text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 Prabhudev Guntur
               </h1>
-              <h2 className="opacity-0 animate-fade-in text-2xl sm:text-3xl md:text-4xl font-display font-medium tracking-tight text-resume-accent flex items-center gap-2" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+              <h2 className="opacity-0 animate-fade-in text-2xl sm:text-3xl md:text-4xl font-display font-medium tracking-tight text-resume-accent" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
                 Experienced AI Lead & ML Engineer
-                <div className="inline-block w-8 h-8 bg-gradient-to-br from-orange-500 via-red-500 to-blue-500 rounded-full p-1 animate-pulse">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white">
-                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-                  </svg>
-                </div>
               </h2>
               <p className="opacity-0 animate-fade-in text-resume-muted md:text-xl max-w-xl mt-4" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
                 Specializing in LLMs, RAG, NLP, Computer Vision, and Deep Learning solutions
