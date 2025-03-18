@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -58,8 +59,11 @@ const Hero = () => {
           <div className="md:col-span-7 space-y-6">
             <div className="space-y-2">
               <h1 className="opacity-0 animate-fade-in text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-                Experienced AI Lead & ML Engineer
+                Prabhudev Guntur
               </h1>
+              <h2 className="opacity-0 animate-fade-in text-2xl sm:text-3xl md:text-4xl font-display font-medium tracking-tight text-resume-accent" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+                Experienced AI Lead & ML Engineer
+              </h2>
               <p className="opacity-0 animate-fade-in text-resume-muted md:text-xl max-w-xl mt-4" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
                 Specializing in LLMs, RAG, NLP, Computer Vision, and Deep Learning solutions
               </p>
@@ -77,6 +81,34 @@ const Hero = () => {
                   {skill}
                 </span>
               ))}
+            </div>
+            
+            <div className="flex gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
+              <a 
+                href="https://github.com/PrabhudevG2" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center rounded-full p-2 text-resume-dark hover:text-resume-accent transition-colors"
+                aria-label="GitHub Profile"
+              >
+                <Github size={24} />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/prabhudev-guntur-65444489/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center rounded-full p-2 text-resume-dark hover:text-resume-accent transition-colors"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin size={24} />
+              </a>
+              <a 
+                href="mailto:gunturpx2020@email.iimcal.ac.in" 
+                className="inline-flex items-center justify-center rounded-full p-2 text-resume-dark hover:text-resume-accent transition-colors"
+                aria-label="Email Contact"
+              >
+                <Mail size={24} />
+              </a>
             </div>
             
             <div className="pt-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
