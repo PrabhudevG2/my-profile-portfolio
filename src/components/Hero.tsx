@@ -61,8 +61,13 @@ const Hero = () => {
               <h1 className="opacity-0 animate-fade-in text-4xl sm:text-5xl md:text-6xl font-display font-bold tracking-tight" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 Prabhudev Guntur
               </h1>
-              <h2 className="opacity-0 animate-fade-in text-2xl sm:text-3xl md:text-4xl font-display font-medium tracking-tight text-resume-accent" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+              <h2 className="opacity-0 animate-fade-in text-2xl sm:text-3xl md:text-4xl font-display font-medium tracking-tight text-resume-accent flex items-center gap-2" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
                 Experienced AI Lead & ML Engineer
+                <div className="inline-block w-8 h-8 bg-gradient-to-br from-orange-500 via-red-500 to-blue-500 rounded-full p-1 animate-pulse">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white">
+                    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                  </svg>
+                </div>
               </h2>
               <p className="opacity-0 animate-fade-in text-resume-muted md:text-xl max-w-xl mt-4" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
                 Specializing in LLMs, RAG, NLP, Computer Vision, and Deep Learning solutions
